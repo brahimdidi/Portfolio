@@ -1,76 +1,45 @@
+# Portfolio_Template
+Portfolio mobile version 
+<img src="template5Images/20210814_111337.jpg" width="350">
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Brahim didi's Portofolio
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+Welcome to my Portofolio Mobile version.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : HTML/CSS;
+- IDE : VisualStudio Code;
+- Web Browsers :  Google Chrome;
 
-## Live Demo
+### Testing
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+- Microverse Linters
 
 ### Prerequisites
 
+- Web browser 
+- Code editor 
+
 ### Setup
 
+- Download the repository.
+- Open the index file with your browser.
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
+- Not needed
 
 
+### Author
+Brahim didi
 
-## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+- [@Figma](https://www.Figma.com) for the template
