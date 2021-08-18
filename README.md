@@ -1,13 +1,15 @@
 # Portfolio_Template
 Portfolio mobile version 
-Welcome to my Portofolio Mobile version, This project contains 3 main sections(header,section1 ,section2)
+Welcome to my Portofolio Mobile version, This project contains 3 main
+sections(header,section1 ,section2)
+
+
 <img src="template5Images/20210814_111337.jpg" width="350">
-n this portofolio you will see all the projects that I have already done, with various programming languages such as: JavaScript, HTML & CSS, Ruby ... etc.
-![](https://img.shields.io/badge/Microverse-blueviolet)
+In this portofolio you will see all the projects that I have already done, with various programming languages such as: JavaScript, HTML & CSS, Ruby ... etc.
 
 # Brahim didi's Portofolio
-
-
+Brahim didi's Portfolio is a website where you can see my projects and my professional
+carreer acheivement
 ## Built With
 
 - Major languages : HTML/CSS;
