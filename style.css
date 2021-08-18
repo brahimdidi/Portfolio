@@ -390,17 +390,17 @@ body {
 
 /* button2 styling */
 .seeproject2 {
-width: 89px;
-height: 48px;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px;
-left: 143px;
-top: 656px;
-background: #7D73FC;
-white-space: nowrap;
-border: none;
+  width: 89px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  left: 143px;
+  top: 656px;
+  background: #7d73fc;
+  white-space: nowrap;
+  border: none;
 }
 
 .seeproject2:hover {
