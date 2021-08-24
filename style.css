@@ -406,6 +406,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 12px;
   left: 143px;
   top: 656px;
@@ -413,6 +414,7 @@ body {
   white-space: nowrap;
   border: none;
   margin-top: 30px;
+  text-transform: capitalize;
 }
 
 .seeproject2:hover {
