@@ -252,6 +252,7 @@ body {
 
 /* languages ul styling  */
 .languagesul {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -268,7 +269,6 @@ body {
   padding-right: 20px;
   padding-top: 8px;
   border-right: 2px solid #555;
-  float: left;
 }
 
 .html {
@@ -277,7 +277,6 @@ body {
   padding-right: 20px;
   padding-top: 8px;
   border-right: 2px solid #555;
-  float: left;
 }
 
 .bootstrap {
@@ -286,16 +285,12 @@ body {
   padding-right: 20px;
   padding-top: 8px;
   border-right: 2px solid #555;
-  float: left;
 }
 
 .ruby {
-  position: static;
   width: 37px;
   height: 20px;
   padding-left: 10px;
-  padding-top: 8px;
-  float: left;
 }
 
 /* button seeproject styling */
