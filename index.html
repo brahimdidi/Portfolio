@@ -20,15 +20,21 @@
 <body>
      <!-- start toolbar -->
    <header id="header">
-       <a class="headertitle">Jhon Doe</a>
-<nav>
+       <a class="headertitle" href="index.html">John Doe</a>
+       <nav class="dsk-btn">
+			<a href="#section1">Portofolio</a>
+			<a href="#section2">About</a>
+			<a href="#footer">Contact</a>
+			<a href="#"><img src="desktopimages/Union.svg" alt="iconesktop"></a>
+		</nav> 
+    <nav class="nav-btn">
     <img src="template5Images/Union.svg" alt="button">
-</nav>
+    </nav>
    </header>
    <!-- end toolbar -->
    <main class="main">
        <!-- start section1 -->
-  <section class="section1">
+  <section class="section1" id="section1">
   <div class="Names">
       <h1 class="h1">Brahim Didi</h1>
       <h2 class="h2">Software developer</h2>
@@ -41,10 +47,9 @@
     project you need coded, don’t
     hesitate to contact me.
   </p>
-  <div class="deviderdiv"><img class="" src="template5Images/devider.svg" alt="devider img"></div>
   <div class="skills-list">
   <ul class="list1">
-      <li class="skills"><h4>Languages</h4></li>
+      <li class="skills "><h4>Languages</h4></li>
       <li class="skills">Javascript</li>
       <li class="skills">Ruby</li>
       <li class="skills">Html</li>
@@ -67,8 +72,8 @@
       <li class="skills">Terminal</li>
   </ul>
   </div>
-  <div class="deviderdiv"><img class="" src="template5Images/devider.svg" alt="devider img"></div>
   <div class="socials">
+    <button class="btn-work" type="button">work<img src="template5Images/down_arrow.svg" alt="arrowdoxn"></button>
       <ul class="sociallist">
           <li><a href=""><img src="template5Images/github.svg" alt="githublogo"></a></li>
           <li><a href=""><img src="template5Images/linkedin.svg" alt="in logo"></a></li>
@@ -78,14 +83,15 @@
       </ul>
       <button class="btn-work" type="button"><img src="template5Images/down_arrow.svg" alt="arrowdoxn">work</button>
   </div>
+  <div class="myrecentwork"><h3 class="h3">My recent work</h3></div>
   </section>
   <!-- end section1 -->
   <!-- start section2 -->
-  <section class="section2">
-      <div class="myrecentwork"><h3 class="h3">MY RECENT WORK</h3></div>
-      <div class="deviderdiv2"><img class="" src="template5Images/devider.svg" alt="devider img"></div>
-      <div class="sectionrepeat">
+  <section class="section2" id="section2">
+      <div class="sct-Placehldrright">
       <div class="placeholderimg1"> <img src="template5Images/ImgPlaceholder.svg" alt="Placeholder"></div>
+      <div class="placeholderimg2"><img src="desktopimages/ImgPlaceholder.png" alt=""></div>
+      <div class="carddetails">
       <div class="multipoststories"><h4 class="h4">Multi-Post Stories</h4></div>
       <p class="paragraphmultipoststories">
         A daily selection of privately
@@ -103,27 +109,11 @@
       </ul>
      <button class="btn2" type="submit">See Project</button>
     </div>
-    <div class="sectionrepeat">
-      <div class="placeholderimg1"> <img src="template5Images/ImgPlaceholder.svg" alt="Placeholder"></div>
-      <div class="multipoststories"><h4 class="h4">Multi-Post Stories</h4></div>
-      <p class="paragraphmultipoststories">
-        A daily selection of privately
-        personalized reads; no accounts or
-        sign-ups required. has been the
-        industry's standard dummy text ever
-        since the 1500s, when an unknown
-        printer took a standard dummy text.
-      </p>
-      <ul class="languagesul">
-          <li class="css">css</li>
-          <li class="html">html</li>
-          <li class="bootstrap">bootstrap</li>
-          <li class="ruby">Ruby</li>
-      </ul>
-     <button class="btn2">See Project</button>
     </div>
-    <div class="sectionrepeat">
+    <div class="sct-Placehldrleft">
         <div class="placeholderimg1"> <img src="template5Images/ImgPlaceholder.svg" alt="Placeholder"></div>
+        <div class="placeholderimg2"><img src="desktopimages/ImgPlaceholder.png" alt=""></div>
+        <div class="carddetails">
         <div class="multipoststories"><h4 class="h4">Multi-Post Stories</h4></div>
         <p class="paragraphmultipoststories">
           A daily selection of privately
@@ -139,10 +129,13 @@
             <li class="bootstrap">bootstrap</li>
             <li class="ruby">Ruby</li>
         </ul>
-       <button class="btn2">See Project</button>
+       <button class="btn2" type="submit">See Project</button>
       </div>
-      <div class="sectionrepeat">
+    </div>
+    <div class="sct-Placehldrright">
         <div class="placeholderimg1"> <img src="template5Images/ImgPlaceholder.svg" alt="Placeholder"></div>
+        <div class="placeholderimg2"><img src="desktopimages/ImgPlaceholder.png" alt=""></div>
+        <div class="carddetails">
         <div class="multipoststories"><h4 class="h4">Multi-Post Stories</h4></div>
         <p class="paragraphmultipoststories">
           A daily selection of privately
@@ -158,21 +151,42 @@
             <li class="bootstrap">bootstrap</li>
             <li class="ruby">Ruby</li>
         </ul>
-       <button class="btn2">See Project</button>
+       <button class="btn2" type="submit">See Project</button>
+      </div>
+      </div>
+      <div class="sct-Placehldrleft">
+        <div class="placeholderimg1"> <img src="template5Images/ImgPlaceholder.svg" alt="Placeholder"></div>
+        <div class="placeholderimg2"><img src="desktopimages/ImgPlaceholder.png" alt=""></div>
+        <div class="carddetails">
+        <div class="multipoststories"><h4 class="h4">Multi-Post Stories</h4></div>
+        <p class="paragraphmultipoststories">
+          A daily selection of privately
+          personalized reads; no accounts or
+          sign-ups required. has been the
+          industry's standard dummy text ever
+          since the 1500s, when an unknown
+          printer took a standard dummy text.
+        </p>
+        <ul class="languagesul">
+            <li class="css">css</li>
+            <li class="html">html</li>
+            <li class="bootstrap">bootstrap</li>
+            <li class="ruby">Ruby</li>
+        </ul>
+       <button class="btn2" type="submit">See Project</button>
+      </div>
       </div>
   </section>
    </main>
    <!-- end of the main content -->
    <!-- start footer -->
-   <footer class="footer">
+   <footer class="footer" id="footer">
        <div class="footerparagraph">
-           <h5 class="h5">CONTACT US</h5>
-           <p class="parafooter">
-            If you have an application you are
-            interested in developing, a feature that you
-            need built or a project that needs coding.
-            I’d love to help with it
-           </p>
+			<h2 class="h5">Let's chat!</h2>
+			<p class="parafooter">
+				If you have an application you are interested in developing,a feature that you
+                need built or a project that needs coding. I’d love to help with it 
+			</p>
         </div>
         <!-- start form -->
         <form action="https://formspree.io/f/xbjqperk" class="footerform" method="POST">
@@ -184,9 +198,8 @@
             
             <textarea name="message" class="formmessage" id="message"  maxlength="500" placeholder="Enter your message" required></textarea>
             </div>
-            <div class="btn2div"><button class="seeproject2" type="submit">submit</button></div>
+            <div class="btn2div"><button class="seeproject2" type="submit">Send</button></div>
         </form>
-        <div class="rectangleimg"><img src="template5Images/Rectangle42.svg" alt="Rectangle"></div>
         <div class="socials2">
             <ul class="sociallist">
                 <li><a href=""><img src="template5Images/github.svg" alt="githublogo"></a></li>
