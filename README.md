@@ -1,5 +1,4 @@
 # Portfolio_Template
-Portfolio mobile version 
 Welcome to my Portofolio Mobile version, This project contains 3 main
 sections(header,section1 ,section2)
 
@@ -8,7 +7,7 @@ sections(header,section1 ,section2)
 In this portofolio you will see all the projects that I have already done, with various programming languages such as: JavaScript, HTML & CSS, Ruby ... etc.
 
 ## Website link
-You can take a look aat the website by clicking here: https://brahimdidi.github.io/PortfolioMobileSkelton/
+You can take a look at the website by clicking here: https://brahimdidi.github.io/PortfolioMobileSkelton/
 
 # Brahim didi's Portofolio
 Brahim didi's Portfolio is a website where you can see my projects and my professional
