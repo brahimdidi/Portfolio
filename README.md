@@ -7,6 +7,9 @@ sections(header,section1 ,section2)
 <img src="template5Images/20210814_111337.jpg" width="350">
 In this portofolio you will see all the projects that I have already done, with various programming languages such as: JavaScript, HTML & CSS, Ruby ... etc.
 
+## Website link
+You can take a look aat the website by clicking here: https://brahimdidi.github.io/PortfolioMobileSkelton/
+
 # Brahim didi's Portofolio
 Brahim didi's Portfolio is a website where you can see my projects and my professional
 carreer acheivement
