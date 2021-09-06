@@ -15,11 +15,11 @@ arrowRight.src = 'template5Images/arrowRight.svg';
 arrowRight2.src = 'template5Images/arrowRight.svg';
 arrowRight3.src = 'template5Images/arrowRight.svg';
 
-// crate the cancel button
+// create the cancel button
 const cancelbtn = document.createElement('img');
 cancelbtn.src = 'template5Images/Icon - Cancel.svg';
-
-const open = function open() {
+// start open function
+const open = () => {
   header.classList.add('header-active');
   logo.classList.add('dis-none');
   menu.classList.add('dis-none');
@@ -38,7 +38,7 @@ const open = function open() {
   header.appendChild(cancelbtn);
   setTimeout(() => { header.style.position = 'fixed'; }, 1100);
 };
-const cancel = function cancel() {
+const cancel = () => {
   header.classList.remove('header-active');
   logo.classList.remove('dis-none');
   menu.classList.remove('dis-none');
@@ -54,7 +54,7 @@ const cancel = function cancel() {
   header.removeChild(cancelbtn);
   header.style.position = 'unset';
 };
-const unfixHeader = function unfixHeader() {
+const unfixHeader = () =>  {
   header.style.position = 'unset';
 };
 menu.addEventListener('click', open);
