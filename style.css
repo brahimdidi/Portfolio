@@ -697,6 +697,7 @@ label {
   display: flex;
   background-color: #191765;
   position: relative;
+  transition: 1s;
 }
 
 .dis-none {
@@ -735,5 +736,4 @@ label {
   position: absolute;
   right: 32px;
   top: 56px;
-  border-radius: 0;
 }
