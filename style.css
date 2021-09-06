@@ -136,7 +136,7 @@ body {
   margin-bottom: 18px;
 }
 
-.skills h4 {
+.skills h3 {
   font-size: 12px;
   font-weight: 500;
   color: #9490ff;
@@ -198,7 +198,7 @@ body {
   margin-top: 10px;
 }
 
-.h3 {
+.h4 {
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -226,13 +226,11 @@ body {
   margin-top: 24px;
 }
 
-.h4 {
+.MPS-h4 {
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
-  letter-spacing: 0;
-  text-align: left;
 }
 
 .paragraphmultipoststories {
@@ -293,7 +291,7 @@ body {
   width: 89px;
   padding: 12px;
   margin-top: 24px;
-  background: #7d73fc;
+  background: #9490ffef;
   display: flex;
   flex-direction: row;
   border: none;
@@ -304,10 +302,11 @@ body {
   align-items: center;
   text-align: center;
   white-space: nowrap;
+  color: #fff;
 }
 
 .btn2:hover {
-  border: 1px solid skyblue;
+  border: 1px solid rgb(7, 55, 73);
 }
 
 /* the footer syling */
@@ -381,6 +380,10 @@ body {
   color: black;
 }
 
+label {
+  display: none;
+}
+
 /* button2 styling */
 .btn2div {
   display: flex;
@@ -395,7 +398,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 12px;
-  background: #7d73fc;
+  background: #9390ff;
   white-space: nowrap;
   border: none;
   margin-top: 30px;
@@ -500,7 +503,7 @@ body {
     font-size: 14px;
   }
 
-  .skills h4 {
+  .skills h3 {
     font-size: 18px;
     font-weight: 700;
   }
@@ -517,6 +520,11 @@ body {
 
   .h2 {
     font-size: 40px;
+  }
+
+  .h4 {
+    font-size: 64px;
+    font-weight: 700;
   }
 
   .paragraph {
@@ -547,11 +555,6 @@ body {
     display: flex;
     align-items: center;
     margin-top: 232px;
-  }
-
-  .h3 {
-    font-size: 64px;
-    font-weight: 700;
   }
 
   .sct-Placehldrright {
@@ -591,7 +594,7 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
-    background: #9390ff;
+    background: #9490ffef;
   }
 
   .multipoststories {
@@ -674,7 +677,7 @@ body {
     height: 48px;
     width: 160px;
     padding: 12px;
-    background-color: #9390ff;
+    background: #9490ffef;
     margin-top: 90px;
   }
 
