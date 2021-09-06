@@ -37,20 +37,20 @@ const open = function open() {
   cancelbtn.classList.add('cancel-btn');
   header.appendChild(cancelbtn);
 };
-// const cancel = function open() {
-//   header.classList.remove('header-active');
-//   logo.classList.remove('dis-none');
-//   menu.classList.remove('dis-none');
-//   navUl.classList.remove('navUl');
-//   msgIcon.classList.remove('dis-none');
-//   ulLinks.removeChild(arrowRight);
-//   ulLinks2.removeChild(arrowRight2);
-//   ulLinks3.removeChild(arrowRight3);
-//   ulLinks.classList.remove('ulLinks');
-//   ulLinks2.classList.remove('ulLinks');
-//   ulLinks3.classList.remove('ulLinks');
-//   cancelbtn.classList.remove('cancel-btn');
-//   header.removeChild(cancelbtn);
-// };
+const cancel = function open() {
+  header.classList.remove('header-active');
+  logo.classList.remove('dis-none');
+  menu.classList.remove('dis-none');
+  navUl.classList.remove('navUl');
+  msgIcon.classList.remove('dis-none');
+  ulLinks.removeChild(arrowRight);
+  ulLinks2.removeChild(arrowRight2);
+  ulLinks3.removeChild(arrowRight3);
+  ulLinks.classList.remove('ulLinks');
+  ulLinks2.classList.remove('ulLinks');
+  ulLinks3.classList.remove('ulLinks');
+  cancelbtn.classList.remove('cancel-btn');
+  header.removeChild(cancelbtn);
+};
 menu.addEventListener('click', open);
 cancelbtn.addEventListener('click', cancel);
