@@ -38,22 +38,22 @@ const open = function open() {
   header.appendChild(cancelbtn);
   setTimeout(() => { header.style.position = 'fixed'; }, 1100);
 };
-// const cancel = function cancel() {
-//   header.classList.remove('header-active');
-//   logo.classList.remove('dis-none');
-//   menu.classList.remove('dis-none');
-//   navUl.classList.remove('navUl');
-//   msgIcon.classList.remove('dis-none');
-//   ulLinks.removeChild(arrowRight);
-//   ulLinks2.removeChild(arrowRight2);
-//   ulLinks3.removeChild(arrowRight3);
-//   ulLinks.classList.remove('ulLinks');
-//   ulLinks2.classList.remove('ulLinks');
-//   ulLinks3.classList.remove('ulLinks');
-//   cancelbtn.classList.remove('cancel-btn');
-//   header.removeChild(cancelbtn);
-//   header.style.position = 'unset';
-// };
+const cancel = function cancel() {
+  header.classList.remove('header-active');
+  logo.classList.remove('dis-none');
+  menu.classList.remove('dis-none');
+  navUl.classList.remove('navUl');
+  msgIcon.classList.remove('dis-none');
+  ulLinks.removeChild(arrowRight);
+  ulLinks2.removeChild(arrowRight2);
+  ulLinks3.removeChild(arrowRight3);
+  ulLinks.classList.remove('ulLinks');
+  ulLinks2.classList.remove('ulLinks');
+  ulLinks3.classList.remove('ulLinks');
+  cancelbtn.classList.remove('cancel-btn');
+  header.removeChild(cancelbtn);
+  header.style.position = 'unset';
+};
 const unfixHeader = function unfixHeader() {
   header.style.position = 'unset';
 };
