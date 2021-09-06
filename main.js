@@ -54,7 +54,7 @@ const cancel = () => {
   header.removeChild(cancelbtn);
   header.style.position = 'unset';
 };
-const unfixHeader = () =>  {
+const unfixHeader = () => {
   header.style.position = 'unset';
 };
 menu.addEventListener('click', open);
