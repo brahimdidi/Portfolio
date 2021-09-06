@@ -697,6 +697,7 @@ label {
   display: flex;
   background-color: #191765;
   position: relative;
+  transtion: 1s;
 }
 
 .dis-none {
