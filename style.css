@@ -16,7 +16,7 @@ body {
 }
 
 /* toolbar styling */
-#header {
+.header {
   width: 100%;
   height: 72px;
   display: flex;
@@ -688,4 +688,52 @@ label {
     align-items: unset;
     justify-content: center;
   }
+}
+
+/* Javascript classed to be added  */
+.header-active {
+  height: 852px;
+  width: 100%;
+  display: flex;
+  background-color: #191765;
+  position: relative;
+}
+
+.dis-none {
+  display: none;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  position: absolute;
+  width: 327px;
+  height: 184px;
+  left: 24px;
+  top: 92px;
+}
+
+.ulLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  width: 327px;
+  left: 0;
+  top: 64px;
+  position: static;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #edecff;
+}
+
+.cancel-btn {
+  position: absolute;
+  right: 32px;
+  top: 56px;
+  border-radius: 0;
 }
