@@ -63,16 +63,15 @@ ulLinks.addEventListener('click', () => { unfixHeader(); cancel(); });
 ulLinks2.addEventListener('click', () => { unfixHeader(); cancel(); });
 ulLinks3.addEventListener('click', () => { unfixHeader(); cancel(); });
 
-//popup detail project start
+// popup detail project start
 const button = document.querySelectorAll('.btn2');
-const Modal = document.getElementById('Modal');
 const main = document.querySelector('.main');
 const footer = document.getElementById('footer');
 // cancelIcon Object
 const cancelIconInfos = {
-  src : "template5Images/Icon-Cancel.svg",
-  alt : "cancelIcon"
-}
+  src: 'template5Images/Icon-Cancel.svg',
+  alt: 'cancelIcon',
+};
 const Modalsection = document.createElement('section');
 Modalsection.classList.add('dis-none');
 Modalsection.innerHTML = `
@@ -104,9 +103,9 @@ Modalsection.innerHTML = `
  <button class="seeLive">See Live <img src="template5Images/Icon.png" alt="seelive"></button>
  <button class="seeSource">See Source <img src="template5Images/Icon-GitHub.png" alt="seelive"></button>
 </div>
-<div id="overlay"></div>`
-const modalHeader = document.createElement('div')
-modalHeader.innerHTML=`<h6 class="mps">Multi - Post stories</h6>`
+<div id="overlay"></div>`;
+const modalHeader = document.createElement('div');
+modalHeader.innerHTML = '<h6 class="mps">Multi - Post stories</h6>';
 const cancelIcon = document.createElement('img');
 cancelIcon.src = cancelIconInfos.src;
 cancelIcon.alt = cancelIconInfos.alt;
@@ -116,19 +115,19 @@ const Modalopen = () => {
   footer.classList.add('dis-none');
   document.body.append(Modalsection);
   Modalsection.insertBefore(modalHeader, Modalsection.firstChild);
-  modalHeader.classList.add('modal-header')
+  modalHeader.classList.add('modal-header');
   Modalsection.classList.remove('dis-none');
   Modalsection.classList.add('modal');
   modalHeader.appendChild(cancelIcon);
   cancelIcon.classList.add('cancelIcon');
-}
+};
 const Modalclose = () => {
   header.classList.remove('dis-none');
   main.classList.remove('dis-none');
   footer.classList.remove('dis-none');
   Modalsection.classList.add('dis-none');
-}
-button.forEach(btn => {
- btn.addEventListener('click',Modalopen);
+};
+button.forEach((btn) => {
+  btn.addEventListener('click', Modalopen);
 });
-cancelIcon.addEventListener('click',Modalclose);
+cancelIcon.addEventListener('click', Modalclose);
