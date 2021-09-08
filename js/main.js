@@ -168,7 +168,7 @@ const Modalclose = () => {
   footer.classList.remove('dis-none');
   Modalsection.classList.add('dis-none');
 };
- button.forEach((btn) => {
-   btn.addEventListener('click', Modalopen);
- });
+button.forEach((btn) => {
+  btn.addEventListener('click', Modalopen);
+});
 cancelIcon.addEventListener('click', Modalclose);
