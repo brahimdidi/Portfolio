@@ -690,6 +690,10 @@ label {
   }
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /* Javascript classed to be added  */
 .header-active {
   height: 852px;
@@ -777,11 +781,6 @@ label {
   height: 19px;
   width: 19px;
   margin-left: 30px;
-}
-
-.cancelIcon:hover {
-  background-color: red;
-  border-radius: 15%;
 }
 
 .mps {
@@ -956,5 +955,11 @@ label {
   .seeLive,
   .seeSource {
     margin-top: unset;
+  }
+}
+
+@media screen  and (min-width: 1500px) {
+  .desktopPopupImg {
+    width: unset;
   }
 }

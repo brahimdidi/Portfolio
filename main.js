@@ -64,6 +64,44 @@ ulLinks2.addEventListener('click', () => { unfixHeader(); cancel(); });
 ulLinks3.addEventListener('click', () => { unfixHeader(); cancel(); });
 
 // popup detail project start
+const cardInfos = [
+  {
+    title: 'Multi - Post stories',
+    img: 'template5Images/Snapshoot-PopupMobile.svg',
+    imgDesktop: 'template5Images/Snapshoot-Modal-Desktop.png',
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe..",
+    lang1: 'html',
+    lang2: 'Ruby on rails',
+    lang3: 'css',
+  },
+  {
+    title: 'My Portfolio Page',
+    img: 'template5Images/card1-bg.jpg',
+    imgDesktop: 'template5Images/card1-bg.jpg',
+    para: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    lang1: 'html',
+    lang2: 'React',
+    lang3: 'scss',
+  },
+  {
+    title: 'Navigation',
+    img: 'template5Images/navigation-card3.jpg',
+    imgDesktop: 'template5Images/navigation-card3.jpg',
+    para: 'Here is the future,from now on you can navigate all day and for free. Contact us for more informations.',
+    lang1: 'html',
+    lang2: 'Javascript',
+    lang3: 'css',
+  },
+  {
+    title: 'About me',
+    img: 'template5Images/aboutme.jpg',
+    imgDesktop: 'template5Images/aboutme.jpg',
+    para: 'Hello I’m a software developer! I can help you build your dream project .If you would like that, don’t hestiate to contact me.',
+    lang1: 'html',
+    lang2: 'python',
+    lang3: 'c++',
+  },
+];
 const button = document.querySelectorAll('.btn2');
 const main = document.querySelector('.main');
 const footer = document.getElementById('footer');
@@ -72,31 +110,31 @@ const cancelIconInfos = {
   src: 'template5Images/Icon-Cancel.svg',
   alt: 'cancelIcon',
 };
+const card1 = cardInfos[0];
+// const card2 = cardInfos.card2;
+// const card3 = cardInfos.card3;
+// const card4 = cardInfos.card4;
 const Modalsection = document.createElement('section');
 Modalsection.classList.add('dis-none');
 Modalsection.innerHTML = `
-<div class="snapchoot-modal"><img src="template5Images/Snapshoot-PopupMobile.svg" alt="snapchoot-modal"></div>
-<div class="snapchoot-modal-desktop"><img src="template5Images/Snapshoot-Modal-Desktop.png" alt="snapchoot-modal"></div>
-<p class="modal-para-mobile">Lorem Ipsum is simply dummy text of the printing and typesetting industry
-. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
- when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum
- is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown 
- printer took a galley of type veris lapoa todoe.</p>
- <p class="modal-para-desktop">Lorem Ipsum is simply dummy text of the printing and typesetting industry
-     . Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-     when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem
-      Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-       the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is
-        simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-       when an unknown printer took a galley of type and scramble.</p>
+<div class="snapchoot-modal"><img src=${card1.img} alt="snapchoot-modal"></div>
+<div class="snapchoot-modal-desktop"><img src=${card1.imgDesktop} class="w-100 desktopPopupImg" alt="snapchoot-modal"></div>
+<p class="modal-para-mobile">${card1.para}</p>
+<p class="modal-para-desktop">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem
+ Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+  the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is
+   simply dummy text of the printing and typesetting industry.
+ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scramble.</p>
  <div class="modal-ul">
      <img src="template5Images/devider-langUl.png" class="devider-langUl" alt="devider">
-     <li class="ul-lang">html</li>
+     <li class="ul-lang">${card1.lang1}</li>
      <img src="template5Images/devider-langUl.png" class="devider-langUl" alt="devider">
-     <li class="ul-lang">Ruby On rails</li>
+     <li class="ul-lang">${card1.lang2}</li>
      <img src="template5Images/devider-langUl.png" class="devider-langUl" alt="devider">
-     <li class="ul-lang">css</li>
+     <li class="ul-lang">${card1.lang3}</li>
      <img src="template5Images/devider-langUl.png" class="devider-langUl" alt="devider">
  </div>
  <div class="modal-buttons">
@@ -105,7 +143,9 @@ Modalsection.innerHTML = `
 </div>
 <div id="overlay"></div>`;
 const modalHeader = document.createElement('div');
-modalHeader.innerHTML = '<h6 class="mps">Multi - Post stories</h6>';
+modalHeader.innerHTML = `<h6 class="mps">${card1.title}</h6>`;
+// start modalsection2
+
 const cancelIcon = document.createElement('img');
 cancelIcon.src = cancelIconInfos.src;
 cancelIcon.alt = cancelIconInfos.alt;
