@@ -690,6 +690,10 @@ label {
   }
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /* Javascript classed to be added  */
 .header-active {
   height: 852px;
@@ -701,7 +705,7 @@ label {
 }
 
 .dis-none {
-  display: none;
+  display: none !important;
 }
 
 .navUl {
@@ -736,4 +740,226 @@ label {
   position: absolute;
   right: 32px;
   top: 56px;
+}
+
+/* Modal styling */
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  width: 90%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.5);
+  margin-top: 5%;
+  z-index: 10;
+}
+
+.modal-header {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#ovelay {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #a2a3ae;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+}
+
+.cancelIcon {
+  height: 19px;
+  width: 19px;
+  margin-left: 30px;
+}
+
+.mps {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+  color: white;
+  margin-left: 25px;
+}
+
+.snapchoot-modal {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.snapchoot-modal-desktop {
+  display: none;
+}
+
+.modal-para-mobile {
+  width: 310.5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.modal-para-desktop {
+  display: none;
+}
+
+.modal-ul {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.ul-lang {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.seeLive {
+  width: 118px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 72px;
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  padding: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  border: none;
+  margin-top: 10px;
+}
+
+.seeSource {
+  width: 128px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 72px;
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  padding: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  border: none;
+  margin-top: 15px;
+}
+
+@media screen  and (min-width: 992px) {
+  .modal {
+    width: 70%;
+    height: 100%;
+    margin-top: 2%;
+    position: relative;
+    gap: 20px;
+  }
+
+  .modal-header {
+    margin-left: 20px;
+    width: 95%;
+  }
+
+  .mps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .cancelIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .snapchoot-modal {
+    display: none;
+  }
+
+  .snapchoot-modal-desktop {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .modal-para-mobile {
+    display: none;
+  }
+
+  .modal-para-desktop {
+    width: 684px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .modal-ul {
+    width: 300px;
+  }
+
+  .modal-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin: 0 auto;
+    height: 48px;
+    margin-bottom: 30px;
+  }
+
+  .seeLive,
+  .seeSource {
+    margin-top: unset;
+  }
+}
+
+@media screen  and (min-width: 1500px) {
+  .desktopPopupImg {
+    width: unset;
+  }
 }
