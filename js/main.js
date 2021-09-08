@@ -111,9 +111,10 @@ const cancelIconInfos = {
   alt: 'cancelIcon',
 };
 const card1 = cardInfos[0];
-// const card2 = cardInfos.card2;
-// const card3 = cardInfos.card3;
-// const card4 = cardInfos.card4;
+// should be used later
+// const card2 = cardInfos[1];
+// const card3 = cardInfos[2];
+// const card4 = cardInfos[3];
 const Modalsection = document.createElement('section');
 Modalsection.classList.add('dis-none');
 Modalsection.innerHTML = `
