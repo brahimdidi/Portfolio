@@ -197,7 +197,7 @@ formEmail.addEventListener('keyup', () => {
     formEmail.style.borderRadius = '7px';
   }
 });
-// local Storage start 
+// local Storage start
 const formname = document.querySelector('.formname');
 const formmessage = document.querySelector('.formmessage');
 const inputs = document.querySelectorAll('input, textarea');
@@ -219,4 +219,3 @@ inputs.forEach((input) => {
     storeData('formInfos', userInfos);
   });
 });
-
