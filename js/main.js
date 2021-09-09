@@ -172,3 +172,27 @@ button.forEach((btn) => {
   btn.addEventListener('click', Modalopen);
 });
 cancelIcon.addEventListener('click', Modalclose);
+const formEmail = document.getElementById('email');
+const lowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const submitButton = document.querySelector('.seeproject2');
+formEmail.addEventListener('keyup', () => {
+  if (formEmail.validity.typeMismatch) {
+    formEmail.setCustomValidity('Please Enter a valid email!');
+  } else {
+    formEmail.setCustomValidity('');
+  }
+
+  if (!lowerCase(formEmail.value)) {
+    submitButton.setCustomValidity('ERROR!! USE lower case only for the email!');
+  }
+});
+
+formEmail.addEventListener('keyup', () => {
+  if (submitButton.validity.valid) {
+    formEmail.style.border = '2px solid green';
+    formEmail.style.borderRadius = '5px';
+  } else {
+    formEmail.style.border = '3px solid red';
+    formEmail.style.borderRadius = '7px';
+  }
+});
