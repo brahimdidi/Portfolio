@@ -380,6 +380,15 @@ body {
   color: black;
 }
 
+::placeholder {
+  color: #81818c;
+  padding-inline-start: 10px;
+}
+
+.formemail::placeholder {
+  color: #191765;
+}
+
 label {
   display: none;
 }
