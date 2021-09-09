@@ -172,6 +172,7 @@ button.forEach((btn) => {
   btn.addEventListener('click', Modalopen);
 });
 cancelIcon.addEventListener('click', Modalclose);
+// form validation start
 const formEmail = document.getElementById('email');
 const lowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const submitButton = document.querySelector('.seeproject2');
@@ -196,3 +197,26 @@ formEmail.addEventListener('keyup', () => {
     formEmail.style.borderRadius = '7px';
   }
 });
+// local Storage start 
+const formname = document.querySelector('.formname');
+const formmessage = document.querySelector('.formmessage');
+const inputs = document.querySelectorAll('input, textarea');
+const storeData = (userInfos, data) => localStorage.setItem(userInfos, JSON.stringify(data));
+const getData = (userInfos) => JSON.parse(localStorage.getItem(userInfos));
+const formInfos = getData('formInfos');
+if (formInfos !== null) {
+  formname.value = formInfos.name;
+  formEmail.value = formInfos.email;
+  formmessage.value = formInfos.message;
+}
+inputs.forEach((input) => {
+  input.addEventListener('input', () => {
+    const userInfos = {
+      name: formname.value,
+      email: formEmail.value,
+      message: formmessage.value,
+    };
+    storeData('formInfos', userInfos);
+  });
+});
+
