@@ -209,14 +209,14 @@ if (formInfos !== null) {
   formEmail.value = formInfos.email;
   formmessage.value = formInfos.message;
 }
-// inputs.forEach((input) => {
-//   input.addEventListener('input', () => {
-//     const userInfos = {
-//       name: formname.value,
-//       email: formEmail.value,
-//       message: formmessage.value,
-//     };
-//     storeData('formInfos', userInfos);
-//   });
-// });
+inputs.forEach((input) => {
+  input.addEventListener('input', () => {
+    const userInfos = {
+      name: formname.value,
+      email: formEmail.value,
+      message: formmessage.value,
+    };
+    storeData('formInfos', userInfos);
+  });
+});
 
